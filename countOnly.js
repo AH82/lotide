@@ -21,7 +21,7 @@ const countOnly = function(allItems, itemsToCount) {
           // increment the counter for each item:
           //   set a property with that string key to:
           //     the value that was already there (or zero if nothing there) with 1 added to it.
-          if (itemsToCount[item]) { // HELP! : before this IF was added, all assertions has passed. I  DO NOT UNDERSTAND what did this line added.
+          if (itemsToCount[item]) { // HELP! : before this IF was added, all assertions has passed. I  DO NOT UNDERSTAND what did this line added.//Help provided//
             if (results[item]) {
               results[item] += 1;
             } else {
@@ -51,4 +51,6 @@ const result1 = countOnly(firstNames, { "Jason": true, "Karima": true, "Fang": t
 assertEqual(result1["Jason"], 1);
 assertEqual(result1["Karima"], undefined);
 assertEqual(result1["Fang"], 2);
+assertEqual(result1["Karl"], undefined);
+
 //
