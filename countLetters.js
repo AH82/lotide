@@ -18,10 +18,14 @@ const countLetters = function(string){
       // console.log(ch);
 
       //code
-      if (results[ch]){
-        results[ch] += 1;
-      } else {
-        results[ch] = 1;
+      
+      if (ch !== ' '){ //This part added later to eliminate spaces
+        if (results[ch]){
+          results[ch] += 1;
+        } else {
+          results[ch] = 1;
+        }
+
       }
   }
   // console.log("total char count :", count); //temp
