@@ -51,12 +51,13 @@ const assertObjectsEqual = function(actual, expected) {
   if (eqObjects(actual, expected) === true) {
     // console.log(`✅✅✅ Object Assertion Passed: === TRUE.`);                  //#EOIoAAE
     // return true;                                                                //#EOIoAAE
-    console.log(`✅✅✅ object ${actual} === object ${expected}`);
+    console.log(`✅✅✅ object ${inspect(actual)} === object ${inspect(expected)}`);
   } else { 
     // console.log(`🛑🛑🛑 Object Assertion Failed: === False (!== true).`);      //#EOIoAAE
     // return false;                                                                //#EOIoAAE
-    console.log(`🛑🛑🛑 object ${actual} !== object ${expected}`);
+    console.log(`🛑🛑🛑 object ${inspect(actual)} !== object ${inspect(expected)}`);
     }
+  
   
 };
 // TEST ASSERTION CODE
