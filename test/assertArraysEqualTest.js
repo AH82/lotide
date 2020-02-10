@@ -1,5 +1,5 @@
 const assertArraysEqual = require('../assertArraysEqual');
-const eqArrays = require('../eqArrays');
+// const eqArrays = require('../eqArrays'); // this is comented out because it is not needed, my mistake
 
 //test Cases
 assertArraysEqual([1, 2, 3], [1, 2, 3], true);
