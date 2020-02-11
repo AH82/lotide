@@ -7,21 +7,21 @@ describe("#head", () => {
     assert.strictEqual(head([1, 2, 3]), 1);
   });
   it("returns '5' for ['5']", () => {
-    assert.strictEqual(head(['5']), '5'); 
+    assert.strictEqual(head(['5']), '5');
   });
   it("returns 'Hello' for ['Hello', 'Lighthouse', 'Labs']", () => {
     assert.strictEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
   });
 });
 
-// THE FOLLOWING IS OLD CODE 
+// THE FOLLOWING IS OLD CODE
 // THAT SHOULD BE DELETED AS PER "COMPASS" INSTRUCTIONS.
 // I'M KEEPING THE CODE FOR LEARNING PURPOSES.
 
 /* const head = require('../head');
 const assertEqual = require('../assertEqual');
 
-TEST CODE 
+TEST CODE
 assertEqual(head([5,6,7]), 5);
 assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
  */

@@ -13,4 +13,4 @@ const head = function(anArray) {
 
 module.exports = head;
 
-// TEST CODE - MOVED TO CORRESPONDING FILE IN THE TEST FOLDER 
+// TEST CODE - MOVED TO CORRESPONDING FILE IN THE TEST FOLDER

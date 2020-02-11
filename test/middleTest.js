@@ -29,7 +29,7 @@ describe("#middle", () => {
   it("ODD array of [1, 2, 3, 4 ,5] return [3]", ()=> {
     assert.deepEqual(middle([1, 2, 3, 4 ,5]), [3]);
   });
-// TESTING RETURN OF EVEN NUMBERED ARRAYS
+  // TESTING RETURN OF EVEN NUMBERED ARRAYS
   it("EVEN array of [1, 2] do not return [1]", ()=> {
     assert.notDeepEqual(middle([1, 2]), [1]);
   });
@@ -53,7 +53,7 @@ describe("#middle", () => {
 });
 
 // ------------------------------------------------------
-// THE FOLLOWING IS OLD CODE 
+// THE FOLLOWING IS OLD CODE
 // THAT SHOULD BE DELETED AS PER "COMPASS" INSTRUCTIONS.
 // I'M KEEPING THE CODE FOR LEARNING PURPOSES.
 // ------------------------------------------------------

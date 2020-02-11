@@ -1,4 +1,4 @@
-//  ASSERTION FUNCTIONS 
+//  ASSERTION FUNCTIONS
 
 const eqArrays = function(leftArray, rightArray) {
   if (leftArray.length !== rightArray.length) return false;
@@ -32,26 +32,26 @@ const map = function(array, callback) {
   
   const results = [];
   // Adding a for..of loop
-  for (let item of array ){
+  for (let item of array) {
     // console.log('item BEFORE: ', item);
     // console.log('item AFTER: ', callback(item));
     // console.log('---');
-      results.push(callback(item));
+    results.push(callback(item));
 
   }
 
   return results;
 
-}
+};
 
 //
 const results1 = map(words, word => word[0]);
 console.log(results1);
 
 //  ASSERTION TEST CASES
-assertArraysEqual(map(["1", "2", "3"], x => x+x ), ["11","22","33"], true);
-assertArraysEqual(map([1, 2, 3], x => x+x ), [2,4,6], true);
-assertArraysEqual(map(["1", "2", "3"], x => x*x ), ["11","22","33"], false);
+assertArraysEqual(map(["1", "2", "3"], x => x + x), ["11","22","33"], true);
+assertArraysEqual(map([1, 2, 3], x => x + x), [2,4,6], true);
+assertArraysEqual(map(["1", "2", "3"], x => x * x), ["11","22","33"], false);
 // assertArraysEqual(map(["1", "2", "3"], x => x+x ), ["11","22","33"], true);
 // assertArraysEqual(map(["1", "2", "3"], x => x+x ), ["11","22","33"], true);
 

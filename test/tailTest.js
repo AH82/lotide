@@ -20,7 +20,7 @@ describe("#tail", () => {
 
 
 // ------------------------------------------------------
-// THE FOLLOWING IS OLD CODE 
+// THE FOLLOWING IS OLD CODE
 // THAT SHOULD BE DELETED AS PER "COMPASS" INSTRUCTIONS.
 // I'M KEEPING THE CODE FOR LEARNING PURPOSES.
 // ------------------------------------------------------

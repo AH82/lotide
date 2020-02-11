@@ -20,7 +20,7 @@ const assertArraysEqual = function(leftArray, RightArray, expectedBool) {
 
 };
 // // ACTUAL FUNCTION ------ // THIS CODE WORKS!
-// const letterPositions = function(sentence){ //sentence is a string 
+// const letterPositions = function(sentence){ //sentence is a string
 //   const results = {};
 //   // logic to update results here
 //   for (let charIndex = 0; charIndex < sentence.length; charIndex++ ){
@@ -35,17 +35,16 @@ const assertArraysEqual = function(leftArray, RightArray, expectedBool) {
 // };
 
 // ACTUAL FUNCTION 2 --- in contrast with countLetters.js
-const letterPositions = function(sentence){ //sentence is a string 
+const letterPositions = function(sentence) { //sentence is a string
   const results = {};
   // logic to update results here
-  for (let charIndex = 0; charIndex < sentence.length; charIndex++ ){
+  for (let charIndex = 0; charIndex < sentence.length; charIndex++) {
     if (results[sentence[charIndex]] !== undefined) {
       results[sentence[charIndex]].push(charIndex);
-    }
-    else {
+    } else {
       results[sentence[charIndex]] = [];
       results[sentence[charIndex]].push(charIndex);
-  }
+    }
     // console.log(results); //test
   }
 
@@ -53,7 +52,7 @@ const letterPositions = function(sentence){ //sentence is a string
 };
 
 let results1 = letterPositions("hello");
-console.log(results1)
+console.log(results1);
 let results2 = letterPositions("LHL");
 
 
