@@ -1,24 +1,4 @@
-// TEST/ASSERTION FUNCTIONS
-
-const eqArrays = function(leftArray, rightArray) {
-  if (leftArray.length !== rightArray.length) return false;
-  for (let i = 0; i < leftArray.length; i++) {
-    if (leftArray[i] !== rightArray[i]) return false;
-  }
-  return true;
-};
-
-const assertArraysEqual = function(leftArray, RightArray, expectedBool) {
-  if (eqArrays(leftArray, RightArray) === expectedBool) {
-    console.log(`✅✅✅ Assertion Passed: === ${expectedBool}.`);
-    return true;
-  } else {
-    console.log(`🛑🛑🛑 Assertion Failed: !== ${expectedBool}.`);
-    return false;
-  }
-
-
-};
+const assertArraysEqual = require('./assertArraysEqual');
 
 // ACTUAL FUNCTION
 const without = function(source, itemsToRemove) {
