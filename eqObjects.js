@@ -1,17 +1,5 @@
-// TEST/ASSERTION FUNCTIONS
-
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}.`);
-  } else  console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}.`);
-};
-const eqArrays = function(leftArray, rightArray) {
-  if (leftArray.length !== rightArray.length) return false;
-  for (let i = 0; i < leftArray.length; i++) {
-    if (leftArray[i] !== rightArray[i]) return false;
-  }
-  return true;
-};
+const assertEqual = require("./assertEqual");
+const eqArrays = require("./eqArrays");
 
 
 // ACTUAL FUNCTION
@@ -40,8 +28,10 @@ const eqObjects = function(object1, object2) {
   }
 };
 
-
+module.exports = eqObjects;
 // TEST ASSERTION CODE
+
+
 
 const ab = { a: "1", b: "2" };
 const ba = { b: "2", a: "1" };
