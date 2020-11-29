@@ -24,6 +24,4 @@ const assertObjectsEqual = function(actual, expected) {
   
   
 };
-// TEST ASSERTION CODE
-assertObjectsEqual({a:1, b:2, c:3}, {a:1, b:2, c:3});
-assertObjectsEqual({a:1, b:2, c:3}, {a:1, b:2, c:4});
+module.exports = assertObjectsEqual;
