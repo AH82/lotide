@@ -5,7 +5,7 @@ const countOnly = function(allItems, itemsToCount) {
   const results = {};
   // let count =0
   for  (const item of allItems) {
-    console.log(item);
+    // console.log(item);
     // count++;
     // console.log(count);
     //---------------
@@ -25,25 +25,4 @@ const countOnly = function(allItems, itemsToCount) {
   return results;
 };
 
-// TEST ASSERTION CODE
-const assertEqual = require("./assertEqual")
-const firstNames = [
-  "Karl",
-  "Salima",
-  "Agouhanna",
-  "Fang",
-  "Kavith",
-  "Jason",
-  "Salima",
-  "Fang",
-  "Joe"
-];
-
-const result1 = countOnly(firstNames, { "Jason": true, "Karima": true, "Fang": true });
-
-assertEqual(result1["Jason"], 1);
-assertEqual(result1["Karima"], undefined);
-assertEqual(result1["Fang"], 2);
-assertEqual(result1["Karl"], undefined);
-
-//
+  module.exports = countOnly;
