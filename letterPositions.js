@@ -19,12 +19,13 @@ const letterPositions = function(sentence) { //sentence is a string
   const results = {};
   // logic to update results here
   for (let charIndex = 0; charIndex < sentence.length; charIndex++) {
-    
-    if (results[sentence[charIndex]] !== undefined) {
-      results[sentence[charIndex]].push(charIndex);
-    } else {
-      results[sentence[charIndex]] = [];
-      results[sentence[charIndex]].push(charIndex);
+    if (sentence[charIndex] !== ' ') {
+      if (results[sentence[charIndex]] !== undefined) {
+        results[sentence[charIndex]].push(charIndex);
+      } else {
+        results[sentence[charIndex]] = [];
+        results[sentence[charIndex]].push(charIndex);
+      }
     }
     // console.log(results); //test
   }
