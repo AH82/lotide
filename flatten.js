@@ -1,4 +1,3 @@
-const assertArraysEqual = require('./assertArraysEqual');
 
 // ACTUAL FUNCTION
 const flatten = function(sourceArray) {
@@ -16,8 +15,4 @@ const flatten = function(sourceArray) {
   }
   return tempArray;
 };
-
-// TEST ASSERTION CODE
-assertArraysEqual(flatten([1, [2, 3], 4]),[1, 2, 3, 4],true);
-assertArraysEqual(flatten([1, [2, 3], 4, [5,6]]),[1, 2, 3, 4, 5,6],true);
-
+module.exports = flatten;
