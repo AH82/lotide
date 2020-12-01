@@ -1,5 +1,5 @@
 const assert = require("chai").assert;
-const findKeyByValue = require("../findKeyByValue")
+const findKeyByValue = require("../findKeyByValue");
 
 
 // TEST DATA
@@ -25,7 +25,7 @@ describe("#findKeyByValue", () => {
 });
 
 
-/* 
+/*
 
 // OLD CUSTOM ASSERTION TEST CODE
 

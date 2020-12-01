@@ -1,5 +1,5 @@
 const assert = require("chai").assert;
-const countLetters = require("../countLetters")
+const countLetters = require("../countLetters");
 
 describe("#countLetters", () => {
   
@@ -9,7 +9,7 @@ describe("#countLetters", () => {
     assert.deepEqual(countLetters("LHL"), {
       L: 2,
       H: 1
-    })
+    });
   });
 
   it(`Doesn't count spaces:
@@ -26,7 +26,7 @@ describe("#countLetters", () => {
       s: 2,
       e: 3,
       n: 1
-    })
+    });
   });
 
 });

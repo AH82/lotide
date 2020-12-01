@@ -8,11 +8,11 @@ describe("#letterPositions", () => {
     assert.deepEqual(letterPositions("LHL"), {
       L: [0, 2],
       H: [1]
-    })
+    });
   });
 
   it("Counts a sentence excluding whitespaces", () => {
-    assert.deepEqual(letterPositions("lighthouse in the house"), { 
+    assert.deepEqual(letterPositions("lighthouse in the house"), {
       l: [0],
       i: [1, 11],
       g: [2],
@@ -23,7 +23,7 @@ describe("#letterPositions", () => {
       s: [8, 21],
       e: [9, 16, 22],
       n: [12]
-    })
+    });
   });
 });
 

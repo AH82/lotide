@@ -1,5 +1,5 @@
-const assert = require("chai").assert
-const countOnly = require("../countOnly")
+const assert = require("chai").assert;
+const countOnly = require("../countOnly");
 
 // TEST DATA
 const firstNames = [
@@ -17,15 +17,15 @@ const firstNames = [
 describe("#countOnly", () => {
 
   const testResult = countOnly(
-    firstNames, 
+    firstNames,
     { // selection object
-      "Jason": true, 
-      "Karima": true, 
-      "Fang": true, 
-      "Agouhanna": false 
+      "Jason": true,
+      "Karima": true,
+      "Fang": true,
+      "Agouhanna": false
     }
   );
-  console.log(testResult)
+  console.log(testResult);
 
   it("should return an object (type)", () => {
     assert.typeOf(testResult,'object');
@@ -37,40 +37,40 @@ describe("#countOnly", () => {
   });
 
   it("assigns 1 to property of elements appearing ONCE && marked true in selection object", () => {
-    assert.equal(testResult.Jason, 1) // OR
-    assert.propertyVal(testResult, "Jason", 1)
+    assert.equal(testResult.Jason, 1); // OR
+    assert.propertyVal(testResult, "Jason", 1);
   });
   
   it("assigns 2 to property of elements appearing TWICE && marked true in selection object", () => {
-    assert.equal(testResult.Fang, 2) // OR
-    assert.propertyVal(testResult, "Fang", 2)
+    assert.equal(testResult.Fang, 2); // OR
+    assert.propertyVal(testResult, "Fang", 2);
   });
   
   it("should not include elements marked false in selection object", () => {
-    assert.isUndefined(testResult.Agouhanna) //OR
-    assert.notProperty(testResult, "Agouhanna")
+    assert.isUndefined(testResult.Agouhanna); //OR
+    assert.notProperty(testResult, "Agouhanna");
   });
   
   it("should not include elements marked true but does not exist", () => {
-    assert.isUndefined(testResult.Karima) // OR
-    assert.notProperty(testResult, "Karima")
+    assert.isUndefined(testResult.Karima); // OR
+    assert.notProperty(testResult, "Karima");
   });
 
   it("should not include elements that are NOT in selection object ", () => {
-    assert.notProperty(testResult, "Joe")
+    assert.notProperty(testResult, "Joe");
   });
 
   it("returns the correct subset result", () => {
-    assert.deepEqual(testResult, { 
-      "Jason": 1, 
+    assert.deepEqual(testResult, {
+      "Jason": 1,
       "Fang": 2
-    })
+    });
   });
 
 });
 
 
-/* 
+/*
 // OLD TEST CUSTOM ASSERTION CODE
 const assertEqual = require("../assertEqual")
 
@@ -79,5 +79,5 @@ const result1 = countOnly(firstNames, { "Jason": true, "Karima": true, "Fang": t
 assertEqual(result1["Jason"], 1);
 assertEqual(result1["Karima"], undefined);
 assertEqual(result1["Fang"], 2);
-assertEqual(result1["Karl"], undefined); 
+assertEqual(result1["Karl"], undefined);
 */
