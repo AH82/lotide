@@ -5,7 +5,7 @@ They are kept here for learning purposes
 They will be Skipped by default.
 */
 
-const assertArraysEqual = require('../assertArraysEqual');
+const assertArraysEqual = require('../../assertArraysEqual');
 
 xdescribe("#assertArraysEqual", () => {
 

@@ -5,7 +5,7 @@ They are kept here for learning purposes
 They will be Skipped by default.
 */
 
-const assertObjectsEqual = require("../assertObjectsEqual");
+const assertObjectsEqual = require("../../assertObjectsEqual");
 
 xdescribe('#assertObjectsEqual', () => {
 
