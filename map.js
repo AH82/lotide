@@ -20,22 +20,4 @@ const map = function(array, callback) {
   return results;
 
 };
-
-//
-const results1 = map(words, word => word[0]);
-console.log(results1);
-
-//  ASSERTION TEST CASES
-const assertArraysEqual = require("./assertArraysEqual")
-
-assertArraysEqual(map(["1", "2", "3"], x => x + x), ["11","22","33"], true);
-assertArraysEqual(map([1, 2, 3], x => x + x), [2,4,6], true);
-assertArraysEqual(map(["1", "2", "3"], x => x * x), ["11","22","33"], false);
-// assertArraysEqual(map(["1", "2", "3"], x => x+x ), ["11","22","33"], true);
-// assertArraysEqual(map(["1", "2", "3"], x => x+x ), ["11","22","33"], true);
-
-
-// assertArraysEqual(without(["1", "2", "3"], [1, 2, "3"]), ["1","2"], true);
-// const palabras = ["hello", "world", "lighthouse"];
-// assertArraysEqual(without(["hello", "world", "lighthouse"], ["lighthouse"]), ["hello", "world"], true);
-// assertArraysEqual(palabras, ["hello", "world", "lighthouse"], true);
+module.exports = map;
