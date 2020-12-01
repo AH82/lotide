@@ -11,7 +11,7 @@ const takeUntil = function(array, callback) {
       resultArray.push(array[i])
     } else return resultArray;
   }
-  
+  return resultArray; // added post-bootcamp: handles no match: returns entire array if no match found; without it, it returns undefined.
 }
 
 
