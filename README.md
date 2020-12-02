@@ -162,9 +162,9 @@ or
 ### v1.0.1
 ---
   #### **Improvements**
-  * `eqArrays` & `eqObjects` now support deep comparison (through recursion)
+  * [`eqArrays`](./eqArrays.js) & [`eqObjects`](./eqObjects.js) now support deep comparison (through recursion)
   * `README.md` redesigned.
-  * The entire project is now clean of dead or commented-out code unless left intentionally.
+  * lints, cleans and removes redundant, dead or commented-out code across entire project, except when intentional.
   * **Testing**
     * The entire code is now covered by tests.
     * Any in-file custom tests (console.log or custom assertions) moved to the `"./test/*"` folders.
