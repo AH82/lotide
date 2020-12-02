@@ -28,26 +28,26 @@ A mini-clone of the [Lodash](https://lodash.com) library.
 <br/>
 
 ## Table of contents
-* [Setup](##Setup)
-  * [Install via npm](###Install-via-npm)
-  * [Clone it from GitHub](###Clone-it-from-GitHub)
-* [Dependencies](##Dependencies)
-  * [DevDependencies](####DevDependencies)
-* [Documentation](##Documentation)
-  * [Main Functions](###Main-Functions)
-  * [Comparison functions](###Comparison-functions)
-  * [Custom Assertion functions](###Custom-Assertion-functions)
-  * [Testing](###Testing)
-    * [Running Test](####Running-Test)
-* [Change History](##Change-History )
-  * [v1.0.1](###v1.0.1)
-    * [Improvements](####Improvements)
-    * [Bug fixes](####Bug-fixes)
-  * [v1.0.0](###v1.0.0)
+* [Setup](#Setup)
+  * [Install via npm](#Install-via-npm)
+  * [Clone it from GitHub](#Clone-it-from-GitHub)
+* [Dependencies](#Dependencies)
+  * [DevDependencies](#DevDependencies)
+* [Documentation](#Documentation)
+  * [Main Functions](#Main-Functions)
+  * [Comparison functions](#Comparison-functions)
+  * [Custom Assertion functions](#Custom-Assertion-functions)
+  * [Testing](#Testing)
+    * [Running Test](#Running-Test)
+* [Change History](#Change-History )
+  * [v1.0.1](#v1.0.1)
+    * [Improvements](#Improvements)
+    * [Bug fixes](#Bug-fixes)
+  * [v1.0.0](#v1.0.0)
 
 
 ## Setup
-<sup>[back to top](##Table-of-contents)</sup>
+<sup>[back to top](#Table-of-contents)</sup>
   > **_CAUTION:_** <br/>
   > **This library is published as a part of a learning process. It is _not_ meant for use in serious projects.**
 
@@ -70,7 +70,7 @@ in your terminal:
 > git clone git@github.com:AH82/lotide.git
 ```
 ## Dependencies
-<sup>[back to top](##Table-of-contents)</sup>
+<sup>[back to top](#Table-of-contents)</sup>
 
 Install Dependencies in the terminal:
 ```s
@@ -84,7 +84,7 @@ Install Dependencies in the terminal:
 ```
 
 ## Documentation
-<sup>[back to top](##Table-of-contents)</sup>
+<sup>[back to top](#Table-of-contents)</sup>
 
 ### Main Functions
 * All functions are in files of `"./<function name>.js"`
@@ -154,7 +154,7 @@ or
 <br/><br/>
 
 ## Change History
-<sup>[back to top](##Table-of-contents)</sup>
+<sup>[back to top](#Table-of-contents)</sup>
 
 
 <br/>
@@ -196,7 +196,7 @@ or
 <br/><br/><br/><br/><br/>
 ---
 
-<sup>[back to top](##Table-of-contents)</sup>
+<sup>[back to top](#Table-of-contents)</sup>
 
 ### Meet Larry The Duck - Lighthouse labs mascot
 ![Larry the Duck](https://www.lighthouselabs.ca/assets/rubberduckdebugging-aeee9fd4a7fb079c0341fe21c32ef66c0980f9a9d0e4a3830446673e6068ad8d.gif)
