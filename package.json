@@ -1,6 +1,6 @@
 {
   "name": "@hatem.deux/lotide",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "mini-clone of lotide",
   "main": "index.js",
   "directories": {

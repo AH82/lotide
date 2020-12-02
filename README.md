@@ -159,6 +159,10 @@ or
 
 <br/>
 
+### v1.0.2
+* upgrades to version 1.0.2 to fix an npm unpublishing/publishing accidental issue.
+* fixes a minor issue in the interlinks of REAMDME.md
+
 ### v1.0.1
 ---
   #### **Improvements**
