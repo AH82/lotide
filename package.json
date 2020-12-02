@@ -1,7 +1,7 @@
 {
   "name": "@hatem.deux/lotide",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.1",
+  "description": "mini-clone of lotide",
   "main": "index.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/AH82/lotide.git"
   },
-  "author": "",
+  "author": "Ahmed Hatem Attia <hatem.deux@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/AH82/lotide/issues"
