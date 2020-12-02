@@ -1,24 +1,10 @@
 
-// // ACTUAL FUNCTION ------ // THIS CODE WORKS!
-// const letterPositions = function(sentence){ //sentence is a string
-//   const results = {};
-//   // logic to update results here
-//   for (let charIndex = 0; charIndex < sentence.length; charIndex++ ){
-//     if (results[sentence[charIndex]] === undefined) {
-//       results[sentence[charIndex]] = [];
-//     }
-//     results[sentence[charIndex]].push(charIndex);
-//     // console.log(results); //test
-//   }
+const letterPositions = function(sentence) {
 
-//   return results;
-// };
-
-// ACTUAL FUNCTION 2 --- in contrast with countLetters.js
-const letterPositions = function(sentence) { //sentence is a string
   const results = {};
-  // logic to update results here
+  
   for (let charIndex = 0; charIndex < sentence.length; charIndex++) {
+
     if (sentence[charIndex] !== ' ') {
       if (results[sentence[charIndex]] !== undefined) {
         results[sentence[charIndex]].push(charIndex);
@@ -27,7 +13,7 @@ const letterPositions = function(sentence) { //sentence is a string
         results[sentence[charIndex]].push(charIndex);
       }
     }
-    // console.log(results); //test
+
   }
 
   return results;
